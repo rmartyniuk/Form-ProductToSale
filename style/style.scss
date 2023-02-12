@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5F5F5;
+    max-width: 1920px;
+}
+
+.container {
+    max-width: 1340px;
+    height: 910px;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    color: #1A1A1A;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .personalData {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        input,
+        select {
+            width: 100%;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            border: 1px solid #D6D6D6;
+            border-radius: 4px;
+            height: 48px;
+        }
+
+        .row {
+            width: 440px;
+            margin: 3px;
+            display: flex;
+        }
+
+        .row:nth-child(3) {
+            input:nth-child(1) {
+                flex: 6;
+            }
+
+            input:nth-child(2) {
+                margin-right: 3px;
+                margin-left: 3px;
+                flex: 2;
+            }
+
+            input:nth-child(3) {
+                flex: 2;
+            }
+        }
+
+        .row:nth-child(4) {
+            input:first-child {
+                margin-right: 3px;
+                flex: 3;
+            }
+
+            input:last-child {
+                flex: 7;
+            }
+        }
+    }
+
+
+}
+
+.formButton {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    gap: 10px;
+    width: 70px;
+    height: 48px;
+    background: #03DAC6;
+    border-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+@media (max-width: 420px) {
+    h1 {
+        margin: 20px auto;
+    }
+
+    .personalData {
+        justify-content: center;
+    }
+
+
+    .row {
+        max-width: 340px;
+    }
+}
+
+.slider {
+    max-width: 1340px;
+    max-height: 572px;
+
+}
+
+.swiper {
+    width: 100%;
+}
+
+.imageContainer {
+    max-width: 450px;
+    max-height: 450px;
+    margin: 0 auto;
+}
+
+.productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.swiper-slide div:nth-child(2) p {
+    max-width: 450px;
+}
+
+.swiper-button {
+    width: 40px;
+    height: 40px;
+    background: #F5F5F5;
+    color: black;
+    font-weight: 600;
+    --swiper-navigation-size: 20px;
+}
+
+.price {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration-line: line-through;
+    color: #757575;
+}
+
+.price:nth-child(2) {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p.description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1A1A;
+}
+
+button.addToCart {
+    max-width: 450px;
+    margin-left: 10px;
+    padding: 16px;
+    background: #000000;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
