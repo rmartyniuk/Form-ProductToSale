@@ -56,13 +56,6 @@ $(document).on('keyup', '#zipCode', function (e) {
 });
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    // loop: true,
-
-    // If we need pagination
-    // pagination: {
-    //     el: '.swiper-pagination',
-    // },
     // autoplay: {
     //     delay: 4000
     // },
@@ -77,21 +70,21 @@ const swiper = new Swiper('.swiper', {
         320: {
             slidesPerView: 1,
             spaceBetween: 10
-          },
-          // when window width is >= 480px
-          480: {
+        },
+        // when window width is >= 480px
+        480: {
             slidesPerView: 3,
             spaceBetween: 30
-          },
-          // when window width is >= 640px
-          640: {
+        },
+        // when window width is >= 640px
+        640: {
             slidesPerView: 3,
             spaceBetween: 40
-          },
-          960: {
+        },
+        960: {
             slidesPerView: 4,
             spaceBetween: 40
-          }
+        }
     },
 
     // And if we need scrollbar

@@ -101,7 +101,7 @@ form .personalData .row:nth-child(4) input:last-child {
 }
 
 .swiper {
-  width: 100%;
+  max-width: 450px;
 }
 
 .imageContainer {
@@ -156,7 +156,7 @@ p.description {
 }
 
 button.addToCart {
-  max-width: 450px;
+  width: 100%;
   margin-left: 10px;
   padding: 16px;
   background: #000000;
