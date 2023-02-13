@@ -100,7 +100,7 @@ form .personalData .row:nth-child(4) input:last-child {
   max-height: 572px;
 }
 
-.swiper {
+.swiper-wrapper {
   max-width: 450px;
 }
 

@@ -56,9 +56,9 @@ $(document).on('keyup', '#zipCode', function (e) {
 });
 
 const swiper = new Swiper('.swiper', {
-    // autoplay: {
-    //     delay: 4000
-    // },
+    autoplay: {
+        delay: 4000
+    },
 
     // Navigation arrows
     navigation: {
